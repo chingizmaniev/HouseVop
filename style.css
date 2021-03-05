@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Raleway&display=swap');
+body{
+    color: white;
+    margin: 0;
+    background-color: #222b31;
+}
+
+.header{
+    background: url(../HouseVop_final/images/Rectangle.png);
+}
+
+.container{
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    background: url(../HouseVop_final/images/first-screen__logo.svg);
+    width: 134px;
+    height: 66px;
+}
+.navbar__menu{
+    display: flex;
+    list-style-type: none;
+    font-family: 'Playfair Display', serif;
+}
+.navbar__item{
+    margin-right: 15px;
+}
+
+.header__welcome{
+    margin-top: 260px;
+}
+.header__welcome-title{
+    font-size: 48px;
+    text-align: center;
+    color: #D4C17F;
+    font-family: 'Playfair Display', serif;
+}
+.header__mouse{
+    background: url(../HouseVop_final/images/mouse.svg);
+    width: 40px;
+    height: 40px;
+    margin: 150px auto;
+}
+.header__contacts{
+    display: flex;
+    justify-content: space-evenly;
+    font-family: 'Raleway', sans-serif;
+}
+.first-section{
+    margin-top: 120px;
+}
+.first-section__places{
+    display: flex;
+    justify-content: center;
+
+}
+.first-section__places__item{
+    text-align: center;
+    margin: 0 40px;
+}
+.img-absolute{
+    position: absolute;
+    top: -60px;
+    right: -100px;
+}
+.second-section h2{
+    color: #D4C17F;
+    font-size: 36px;
+    font-family: 'Playfair Display', serif;
+}
+.img-absolute-2{
+    position: absolute;
+    top: 45px;
+    left: 5px;
+}
+.second-section__gallery img{
+    max-width: 450px;
+}
+.second-section__gallery-1, .second-section__gallery-2{
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 0;
+}
+.gallery-1__item, .gallery-2__item{
+    position: relative;
+}
+.second-section span{
+    position: absolute;
+    bottom: 40px;
+    left: 10px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.third-section{
+    background: url(../HouseVop_final/images/Rectangle\ \(4\).png);
+    height: 400px;
+}
+
+.third-section h2{
+    color: #D4C17F;
+    font-size: 36px;
+    font-family: 'Playfair Display', serif;
+}
+
+.third-section{
+    background: url(../images/Rectangle\ \(2\).png);
+    margin-top: 200px;
+    padding-bottom: 100px;
+    
+}
+.third-section h2{
+    color: #D4C17F;
+    font-size: 36px;
+    font-family: 'Playfair Display', serif;
+}
+
+.footer-block-1{
+    width: 50%;
+    
+}
+
+.text-footer{
+    padding: 15px;
+    text-align: center;
+}
+.blocks{
+    width: 200px;
+    height: 40px;
+    color: white;
+    background-color: #e2e2d32e;
+    margin: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.blocks__btn {
+    padding: 12px 76px;
+    margin-right: 17px;
+    background-color: #e2e2d32e;
+    border: none;
+    color: white;
+}
+
+
+.blocks-2{
+    background-color: #e2e2d32e;
+    padding: 12px 76px;
+    margin-right: 17px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-block-2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+button.block-btn {
+    padding: 12px 80px;
+    color: #fff;
+    background: #8f969647;
+    font-size: 14px;
+    border: none;
+}
+
+.block-btn-4 {
+    padding: 7px 70px;
+    border: none;
+    background: #888854;
+    color: #fff;
+    font-size: 14px;
+}
+
+.btn-text {
+    background: transparent;
+    border: none;
+    color: #fff;
+}
+
+.footer-block-3 {
+    display: flex;
+    margin-top: 20px;
+}
+
+
+/* Hamburger menu start */
+
+#menu__toggle{
+    opacity: 0;
+}
+.menu__btn{
+    display: flex;
+    align-items: center;
+    position: fixed;
+    visibility: hidden;
+    top: 40px;
+    right: 20px;
+    cursor: pointer;
+    width: 26px;
+    height: 26px;
+    z-index: 2;
+}
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+}
+.menu__btn > span::before{
+    content: '';
+    top: -8px;
+}   
+.menu__btn > span::after{
+    content: '';
+    top: 8px;
+}
+#menu__toggle:checked ~ .menu__btn > span{
+    transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before{
+    top: 0;
+    transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after{
+    top: 0;
+    transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box{
+    visibility: visible;
+    right: 0;
+}
+
+/* Hamburger menu end */
+
+@media all and (max-width: 768px){
+    .menu__btn{
+    visibility: visible;
+    }
+    .menu__box{
+        display: block;
+        position: fixed;
+        visibility: hidden;
+        top: 0;
+        right: -100%;
+        width: 300px;
+        height: 100%;
+        margin: 0;
+        padding: 80px 0;
+        text-align: center;
+        background-color: slategray;
+        z-index: 1;
+    }
+    .navbar__item{
+        display: block;
+        padding: 12px 24px;
+        font-size: 20px;
+        font-weight: 600;
+        color: #333;
+    }
+    .navbar__item:hover{
+        background-color: snow;
+    }
+}   
+@media all and (max-width: 960px){
+    .second-section__gallery-1, .second-section__gallery-2{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    @media all and (max-width: 960px){
+     .footer{
+         display: flex;
+         flex-wrap: wrap;
+    }
+    .footer-block-right{
+        margin-top: 25px;
+    }
+}
