@@ -7,6 +7,9 @@ body{
 
 .header{
     background-image: url(../HouseVop_final/images/Rectangle.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 .container{
@@ -20,9 +23,9 @@ body{
     justify-content: space-between;
 }
 .logo{
-    background-image: url(../HouseVop_final/images/first-screen__logo.svg);
+    /* background-image: url(../HouseVop_final/images/first-screen__logo.svg); */
     width: 134px;
-    height: 66px;
+    height: 10px;
 }
 .navbar__menu{
     display: flex;
