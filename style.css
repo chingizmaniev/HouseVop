@@ -6,7 +6,7 @@ body{
 }
 
 .header{
-    background: url(../HouseVop_final/images/Rectangle.png);
+    background-image: url(../HouseVop_final/images/Rectangle.png);
 }
 
 .container{
@@ -20,7 +20,7 @@ body{
     justify-content: space-between;
 }
 .logo{
-    background: url(../HouseVop_final/images/first-screen__logo.svg);
+    background-image: url(../HouseVop_final/images/first-screen__logo.svg);
     width: 134px;
     height: 66px;
 }
@@ -43,7 +43,7 @@ body{
     font-family: 'Playfair Display', serif;
 }
 .header__mouse{
-    background: url(../HouseVop_final/images/mouse.svg);
+    background-image: url(../HouseVop_final/images/mouse.svg);
     width: 40px;
     height: 40px;
     margin: 150px auto;
@@ -99,7 +99,7 @@ body{
 }
 
 .third-section{
-    background: url(../HouseVop_final/images/Rectangle\ \(4\).png);
+    background-image: url(../HouseVop_final/images/Rectangle\ \(4\).png);
     height: 400px;
 }
 
@@ -110,7 +110,7 @@ body{
 }
 
 .third-section{
-    background: url(../HouseVop_final/images/Rectangle (4).png);
+    background-image: url(../HouseVop_final/images/Rectangle (4).png);
     margin-top: 200px;
     padding-bottom: 100px;
     
