@@ -1,7 +1,7 @@
 {
   "name": "housevop",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "index.html",
   "repository": "https://github.com/chingizmaniev/HouseVop.git",
   "author": "Cobbmanu <cmaniev@gmail.com>",
   "license": "MIT",
