@@ -5,7 +5,6 @@
   "repository": "https://github.com/chingizmaniev/HouseVop.git",
   "author": "Cobbmanu <cmaniev@gmail.com>",
   "license": "MIT",
-  "homepage": "https://chingizmaniev.github.io/HouseVop/",
   "private": true,
   "scripts": {
     "deploy": "gh-pages -d build"
